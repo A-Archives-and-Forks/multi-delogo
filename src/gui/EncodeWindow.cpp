@@ -120,6 +120,7 @@ void EncodeWindow::configure_widgets(const Glib::RefPtr<Gtk::Builder>& builder)
   widgets_to_disable_.push_back(box_scale);
 
   builder->get_widget("chk_no_audio", chk_no_audio_);
+  widgets_to_disable_.push_back(chk_no_audio_);
 
   Gtk::Button* btn_cmd_line = nullptr;
   builder->get_widget("btn_cmd_line", btn_cmd_line);
